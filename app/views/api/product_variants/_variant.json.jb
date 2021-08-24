@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+{
+  id: variant.id,
+  code: variant.code,
+  name: variant.name,
+  price: variant.price,
+  quantity: variant.quantity
+}

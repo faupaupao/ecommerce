@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+{
+  code: 200,
+  messages: ['Success'],
+  length: @orders.length,
+  data: @orders.collect do |order|
+    render('api/orders/order', order: order)
+  end,
+  pagination: render('kaminari/pagination', resources: @orders)
+}

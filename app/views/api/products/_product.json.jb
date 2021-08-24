@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+{
+  id: product.id,
+  store: product.store.name,
+  code: product.code,
+  name: product.name,
+  variants: product.product_variants.active.collect do |variant|
+    render('api/product_variants/variant', variant: variant)
+  end
+}

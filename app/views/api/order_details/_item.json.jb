@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+{
+  number: item.number,
+  title: item.title,
+  number: item.number,
+  quantity: item.quantity,
+  price: item.price,
+  discount: item.discount,
+  subtotal: item.subtotal
+}

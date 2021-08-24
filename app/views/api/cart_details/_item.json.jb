@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+{
+  id: item.id,
+  product: item.product.name,
+  variant: item.product_variant.name,
+  title: item.title,
+  quantity: item.quantity,
+  price: item.price,
+  discount: item.discount,
+  subtotal: item.subtotal,
+  status: item.status
+}

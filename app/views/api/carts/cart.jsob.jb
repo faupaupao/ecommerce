@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+{
+  id: cart.id,
+  store: cart.store.name,
+  name: cart.address.name,
+  phone: cart.address.phone,
+  address: cart.address.full_address,
+  items: cart.cart_details.collect do |item|
+    render('api/cart_details/item', item: item)
+  end,
+  tax: cart.tax,
+  discount: cart.discount,
+  shipping_fee: cart.shipping_fee,
+  subtotal: cart.subtotal,
+  grand_total: cart.grand_total
+}
